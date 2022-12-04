@@ -1,0 +1,80 @@
+.box1{
+    display: flex;
+    background-color: grey;
+    margin: 10px;
+}
+.band{
+    flex: 0.2;
+    background-color:red ;
+    text-align: center;
+
+}
+.value{
+    flex: 0.16;
+    background-color: rgb(223, 112, 112);
+    text-align: center;
+}
+.main{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.STOR{
+    flex: 0.2;
+    background-color: aqua;
+    text-align: center;
+}
+.value2{
+    flex: 0.4;
+    background-color: rgb(155, 215, 195);
+    text-align: center;
+}
+.USE{
+    flex: 0.2;
+    background-color: green;
+    text-align: center;
+}
+.value3{
+    flex: 0.6;
+    background-color: greenyellow;
+    text-align: center;
+}
+.VISI{
+    flex: 0.2;
+    background-color: yellow;
+    text-align: center;
+}
+.value4{
+    flex: 0.22;
+    background-color: rgb(236, 236, 190);
+    text-align: center;
+}
+.EMAI{
+    flex: 0.2;
+    background-color: blueviolet;
+    text-align: center;
+}
+.value5{
+    flex: 0.35;
+    background-color: rgb(109, 79, 136);
+    text-align: center;
+}
+.BASI{
+    flex: 0.2;
+    background-color: violet;
+    text-align: center;
+}
+.value6{
+    flex: 0.5;
+    background-color: rgb(119, 88, 119);
+    text-align: center;
+}
+.OTHE{
+    flex: 0.2;
+    background-color: blue;
+    text-align: center;
+}
+.value7{
+    flex: 0.296;
+    background-color: rgb(155, 155, 230);
+    text-align: center;
+}
