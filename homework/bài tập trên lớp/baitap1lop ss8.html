@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function bt1(){
+            console.log('bt1');
+            let x = prompt ('moi nhap x: ');
+            x*=2;
+            alert ('output '+ x);
+        }
+        // bt1();
+        function bt2 () {
+            let MIN = prompt('nhap so thu nhat: ')
+            let b = prompt ('nhap so thu hai:')
+            let c = prompt ('nhap so thu ba:')
+            let d = prompt ('nhap so thu bon:')
+            if (parseInt(b)<parseInt(MIN)) MIN = b
+            if (parseInt(c)<parseInt(MIN)) MIN = c
+            if (parseInt(d)<parseInt(MIN)) MIN = d
+            alert(MIN); 
+        }
+        // bt2();
+        function bt3(){
+            let n = parseInt(prompt('nhap vao so nguyen n'));
+            n = (n-1)/2;
+            alert(parseInt(n));
+        }
+        // bt3();
+        function bt4() {
+            let n = parseInt(prompt('nhap vao day so nguyen co 2 chu so vao day :'));
+            a = n % 10;
+            b = n / 10;
+            alert('so hang chuc la'+ parseInt(b))
+            alert('số hàng đơn vị là ' + parseInt(a));
+        }
+        // bt4();
+
+    </script>
+</body>
+</html>
