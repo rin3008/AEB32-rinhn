@@ -80,13 +80,9 @@
         }
         // bt6();
         function bt7() {
-            // let a = parseInt(prompt('nhap a: '));
-            // let b = parseInt(prompt('nhap b:'));
-            // alert ('chu thuong'+ parseInt('a'));
-            // alert ('chu in hoa'+ )
             let a = prompt('nhap a;');
             let b = prompt('nhap b:');
-            document.write(a.toLowerCase() + "</>");
+            document.write(a.toLowerCase() + "<br/>");
             document.write(b.toUpperCase());
         }
         // bt7();
@@ -99,7 +95,7 @@
             do {
                 N = parseFloat(prompt(
                     "Số xăng bạn cần mua ?"))
-                if (N == Math.floor(N) && N > 0) {
+                if (N === Math.floor(N) && N > 0) {
                     break;
                 } else {
                     alert("Nhập lại:")
@@ -118,7 +114,56 @@
             document.write("Số tiền ít nhất cần trả là: " + money);
 
         }
-        bt10();
+        // bt10();
+        function bt9() {
+            let str = "dEar rIN";
+            let res = "";
+            let resLength = "";
+            let convertArray = str.split(" "); // {\['dEar rIN']}
+
+            convertArray.forEach((element) => {
+                // res += capitalizeFirstletter(element) + " ";
+                resLength += countCharacter(element) + " ";
+            });
+
+            // document.write(res.trim());
+            document.write(resLength.trim());
+
+            // function capitalizeFirstletter(string) {
+            //     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+
+            // }
+
+            function countCharacter(string) {
+                return string.length;
+            }
+        }
+        bt9();
+        // function bt7() {
+        //     let str = "heLLO woRld";
+        //     let res7 = "";
+        //     let res8 = "";
+        //     let convertArray = str.split(" "); // ['dEar' , 'hAI']
+
+        //     // index = 0 - element == 'dEar'
+        //     convertArray.forEach((element) => {
+        //         res7 += capitalizeFirstLetter(element) + " ";
+        //         res8 += countCharacter(element) + " ";
+        //     });
+
+        //     console.log(res7.trim());
+        //     console.log(res8.trim());
+
+        //     function capitalizeFirstLetter(string) {
+        //         return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+        //     }
+
+        //     function countCharacter(string) {
+        //         return string.length;
+        //     }
+        // }
+
+        // bt7();
     </script>
 </body>
 
