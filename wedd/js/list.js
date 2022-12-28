@@ -9,10 +9,10 @@ function _renderUI(users) {
   function formatRow(user) {
     return `
     <tr>
-      <td>${user.id}</td>
+      
       <td>${user.name}</td>
-      <td>${user.city}</td>
-      <td>${user.avatar}</td>
+      <td>${user.pass}</td>
+      <td>${user.maill}</td>
       <td>
         <button class="btn btn-success" onclick="goToDetail(${user.id})">Detail</button>
         <button class="btn btn-danger" onclick="deleteUser(${user.id})">Delete</button>
