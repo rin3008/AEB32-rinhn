@@ -1,0 +1,45 @@
+"https://63284e93a2e90dab7bdd0fd7.mockapi.io/api/v1/products";
+      data.map((item) => {
+        fetch(URL_PRODUCTS, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(item),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            // console.log(data);
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      });
+    }
+    function getDataAPI() {
+      const URL_PRODUCTS =
+        "https://63284e93a2e90dab7bdd0fd7.mockapi.io/api/v1/products";
+      fetch(URL_PRODUCTS, {
+        method: "GET",
+      })
+        .then((response) => response.json())
+        .then((data) => {
+        //   console.log(data);
+          _renderUI(data);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    }
+  </script>
+  <script src="./js/common.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"
+  ></script>
+
+</html>
