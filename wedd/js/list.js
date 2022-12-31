@@ -1,4 +1,5 @@
-const URL = "https://63a06c8d24d74f9fe837d721.mockapi.io/users";
+const URL = "https://632878a09a053ff9aab8cf03.mockapi.io/api/v1/users";
+
 
 getListUser();
 
